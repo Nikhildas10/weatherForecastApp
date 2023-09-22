@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Julee&family=Kanit:wght@500&family=Kaushan+Script&family=Lora&family=Montserrat:wght@600&family=Mulish:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&family=VT323&family=Ysabeau+Office&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:linear-gradient(to bottom, #93FB9D,
+    #09C7FB); 
+}
+.card{
+    position: relative;
+    padding:50px;
+    padding-bottom: 0;
+    border-radius: .7rem;
+    width: 24rem;
+    border: none;
+    background: rgba( 74, 144, 226, 0.4 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+}
+
+.card::before{
+    content: '';
+    top: -10%;
+    left: -12%;
+    height: 100px;
+    z-index: -100;
+    opacity: .3;
+    border-radius: 50%;
+    width: 100px;
+    background-color: 
+    #09C7FB;
+   position: absolute;
+}
+.card::after{
+    content: '';
+    bottom: -10%;
+    right: -12%;
+    height: 100px;
+    z-index: -100;
+    opacity: .3;
+    border-radius: 50%;
+    width: 100px;
+    background-color: 
+    #93FB9D;
+   
+   position: absolute;
+}
+
+
+section{
+    width: 100vw;
+    height: 100vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search input{
+    font-size: small;
+    font-weight: 700;
+    opacity: .5;
+    padding: 7px;
+    border: 0;
+    border-radius: 20px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.search button{
+    width: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: rgba(255, 255, 255, 0.132);
+    border-radius: 50%;
+    padding: 7px;
+    border: 0;
+}
+.search button:hover{
+    background-color: rgba(197, 197, 197, 0.132);
+}
+.weather{
+    display: flex;
+    justify-content: center;
+}
+.weather img{
+    width: 220px;
+
+}
+.detail1{
+  
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+h1{
+    font-weight: 700;
+}
+h1, h2{
+    text-align: center;
+    color: white; 
+    /* font-weight: 700; */
+}
+h2{
+    font-size: large;
+}
+.humidity img {
+    filter: invert();
+    opacity: .8;
+    padding-bottom: .2rem;
+object-fit: contain;
+width:2rem;
+
+}
+.windspeed img{
+    filter: invert();
+    opacity: .8;
+    padding-bottom: .2rem;
+object-fit: contain;
+width:3rem;
+
+}
+.humidity,.windspeed{
+   text-align: center;
+}
+.location a{
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+}
+.location a:hover{
+    opacity: 1;
+}
+
+.detail2{
+   
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.maxtemp{
+    padding-top: 1rem;
+    padding-right: 3rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.401);
+}
+.windspeed p{
+    margin-top: .3rem;
+    text-align: center;
+}
+p{
+    margin-top: 0;
+    margin-bottom:0;
+}
+/* .humidity p{
+    padding-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+} */
+.maxtemp p,.mintemp p{
+    margin-bottom: 1rem;
+    
+}
+.mintemp{
+    padding-top: 1rem;
+}
